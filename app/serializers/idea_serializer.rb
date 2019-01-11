@@ -1,4 +1,4 @@
 class IdeaSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :title, :description, :category_id, :user_id
   has_many :comments
 end

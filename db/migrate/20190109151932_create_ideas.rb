@@ -5,8 +5,6 @@ class CreateIdeas < ActiveRecord::Migration[5.2]
       t.string :description
       t.integer :user_id
       t.integer :category_id
-      t.string :—
-      t.string :no-test-framework
 
       t.timestamps
     end
