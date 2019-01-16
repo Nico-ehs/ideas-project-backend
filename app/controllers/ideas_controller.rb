@@ -10,7 +10,7 @@ class IdeasController < ApplicationController
   end
 
   def create
-      render json: Idea.find_or_create_by(Idea_params)
+      render json: Idea.find_or_create_by(idea_params)
   end
 
   def update

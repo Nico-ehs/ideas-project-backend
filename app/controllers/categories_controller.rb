@@ -1,29 +1,29 @@
 class CategoriesController < ApplicationController
 
   def index
-      render json: Catagory.all
+      render json: Category.all
   end
 
   def show
-      render json: Catagory.find(params[:id])
+      render json: Category.find(params[:id])
   end
 
   def create
-      render json: Catagory.find_or_create_by(Catagory_params)
+      render json: Category.find_or_create_by(Category_params)
   end
 
   def update
-      Catagory.find(params[:id]).update(event_params)
-      render json: Catagory.find(params[:id])
+      Category.find(params[:id]).update(event_params)
+      render json: Category.find(params[:id])
   end
 
   def destroy
-      render json: Catagory.find(params[:id]).destroy
+      render json: Category.find(params[:id]).destroy
   end
 
   private
-  def catagory_params
-      params.require(:catagory).permit(:title, :description)
+  def category_params
+      params.require(:category).permit(:title, :description)
   end
 
 

@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-      render json: Comment.find_or_create_by(Comment_params)
+      render json: Comment.find_or_create_by(comment_params)
   end
 
   def update
@@ -23,6 +23,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-      params.require(:comment).permit(:text, :user_id, :comment_id)
+      params.require(:comment).permit(:text, :user_id, :idea_id)
   end
 end
