@@ -11,8 +11,8 @@ Category.destroy_all
 Idea.destroy_all
 Comment.destroy_all
 
-u1=User.create(name: "user 1")
-u2=User.create(name: "user 2")
+u1=User.create(name: "user 1", password: "test")
+u2=User.create(name: "user 2", password: "test")
 
 c1=Category.create(title:'things', description: "objects")
 c2=Category.create(title:'plans', description: "do stuff" )
