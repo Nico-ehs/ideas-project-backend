@@ -14,7 +14,9 @@ class IdeasController < ApplicationController
   end
 
   def update
-      Idea.find(params[:id]).update(event_params)
+      Idea.find(params[:id]).update(idea_params)
+
+      print("\n #{Idea.find(params[:id])} \n #{params} \n #{idea_params} \n Test \n\n\n\n")
       render json: Idea.find(params[:id])
   end
 
