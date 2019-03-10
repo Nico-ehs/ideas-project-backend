@@ -1,24 +1,23 @@
-# README
+#This is a demo app for a Idea sharing website. It uses a rails backend, a react frontend, and has basic posting and commenting functionality.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A live verison can be found at https://ideas-project-frontend.herokuapp.com/
 
-Things you may want to cover:
+Pitch
+Tiered of thinking up your own projects or plots? Crowdsource your brainstorming with
 
-* Ruby version
 
-* System dependencies
+Technical details
+ This project uses a rails backend and react frontend. ReactBootstrap is used for css styling.
 
-* Configuration
+Startup
 
-* Database creation
+Backend setup
+-rake db:create
+-rake db:migrate
+-rake db:seed
+-rails s
 
-* Database initialization
+Frontend setup
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-npm install
+-npm start
